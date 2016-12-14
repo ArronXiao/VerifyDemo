@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<com.aron.xiao.app.verifydemo.view.custom.MyViewGroup-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="#ff0000"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="100dp"-->
+            <!--android:layout_margin="50dp"-->
+            <!--android:background="#00ff00"/>-->
+    <!--</com.aron.xiao.app.verifydemo.view.custom.MyViewGroup>-->
+    <com.aron.xiao.app.verifydemo.view.custom.MyViewGroup
+        android:id="@+id/myViewgroup"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#ff0000">
+        <com.aron.xiao.app.verifydemo.view.custom.MyView
+            android:id="@+id/myView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#00ff00"/>
+    </com.aron.xiao.app.verifydemo.view.custom.MyViewGroup>
+    <Button
+        android:id="@+id/btn_disallowIntercept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置不允许拦截消息"/>
+    <Button
+        android:id="@+id/btn_intercept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewGroup拦截消息"/>
+    <Button
+        android:id="@+id/btn_consume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View消耗视图"/>
+    <Button
+        android:id="@+id/btn_reback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设置还原"/>
+</LinearLayout>
